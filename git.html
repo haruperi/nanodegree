@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+    <title>Nano Degree</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <h1>Git and Github</h1>
+
+    <h2>Shell</h2>
+    <p>echo</p>
+    <p>ls, ls-l, ls-l *.pdf </p>
+    <p>cd</p>
+    <p>..</p>
+    <p>pwd</p>
+    <p>mkdir</p>
+    <p>mv</p>
+    <p>curl</p>
+    <p>cat</p>
+    <p>less</p>
+    <p>rm</p>
+    <p>rmdir</p>
+    <p>grep {word} {filename} | less</p>
+
+    <h2>First Time Git Configuration</h2>
+    <p>Before you can start using Git, you need to configure it. Run each of the following lines on the command line to make sure everything is set up.</p>
+
+    <div class="codeClass">
+    <code>
+# sets up Git with your name <br/>
+git config --global user.name "haruperi" <br/><br/>
+
+# sets up Git with your email<br/>
+git config --global user.email "rufaroh59@gmail.com"<br/><br/>
+
+# makes sure that Git output is colored<br/>
+git config --global color.ui auto<br/><br/>
+
+# displays the original state in a conflict<br/>
+git config --global merge.conflictstyle diff3<br/><br/>
+
+git config --list<br/>
+    </code>
+    </div>
+
+    <h2>Create A Repo From Scratch</h2>
+    <p>Once you have navigated to the correct folder, you can initialize Git on that folder:</p>
+
+    <div class="codeClass">
+        <code>git init
+          <br>  Initialized empty Git repository in D:/OneDrive/02 Software Development/Web Development/htdocs/nanodegree/.git/
+        </code>
+
+    </div>
+
+     <h2>Clone An Existing Repo</h2>
+    <p>To make an identical copy of an existing folder:</p>
+
+    <div class="codeClass">
+        <code>git clone https://github.com/udacity/course-git-blog-project
+          <br> 
+        </code>
+
+    </div>
+
+
+     <h2>Determine A Repo's Status</h2>
+    <p>Git status and see if it is a part of our repo</p>
+
+    <div class="codeClass">
+        <code>git status
+          <br>  On branch master <br><br>
+
+                No commits yet<br><br>
+
+                Untracked files:<br>
+                (use "git add ..." to include in what will be committed)<br>
+                    index.html<br><br>
+
+                nothing added to commit but untracked files present (use "git add" to track)<br>
+        </code>
+
+    </div>
+
+    <p>Now Git is aware of the file, but has not added it to our repository!<br><br>
+
+Files in your Git repository folder can be in one of 2 states:<br><br>
+
+Tracked - files that Git knows about and are added to the repository<br>
+Untracked - files that are in your working directory, but not added to the repository<br>
+ When you first add files to an empty repository, they are all untracked. To get Git to track them, you need to stage them, or add them to the staging environment.</p>
+
+ <p><b>Git Staging Environment</b><br>
+One of the core functions of Git is the concepts of the Staging Environment, and the Commit.
+
+As you are working, you may be adding, editing and removing files. But whenever you hit a milestone or finish a part of the work, you should add the files to a Staging Environment.
+
+Staged files are files that are ready to be committed to the repository you are working on.</p>
+
+<p>adding one file: <i>git add index.html</i></p>
+<p>adding all files: <i>git add --all</i></p>
+
+
+</div>
+    <!-- JavaScript; -->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    
+  </body>
+</html>

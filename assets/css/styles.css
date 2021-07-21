@@ -1,0 +1,28 @@
+#bluebox {
+    background-color: blue;
+    height: 100px;
+    width: auto;
+    color: white;
+    margin-top: 10px;
+
+}
+
+#greenbox {
+    background-color: green;
+    height: 100px;
+    width: auto;
+    color: black;
+    margin-top: 10px;
+
+}
+
+
+.codeClass {
+    background-color: black;
+   
+    
+}
+
+code {
+    color: white;
+}
